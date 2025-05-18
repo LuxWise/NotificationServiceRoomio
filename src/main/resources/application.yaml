@@ -7,8 +7,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${SPRING_MAIL_USERNAME:roomio.comunicaciones.2025@gmail.com}
-    password: ${SPRING_MAIL_PASSWORD:miqg yttc qzhw jgmp}
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -18,8 +18,8 @@ spring:
   rabbitmq:
     host: rabbitmq
     port: 5672
-    username: ${RABBITMQ_DEFAULT_USER:admin}
-    password: ${RABBITMQ_DEFAULT_PASS:securepass123}
+    username: ${RABBITMQ_DEFAULT_USER}
+    password: ${RABBITMQ_DEFAULT_PASS}
     listener:
       simple:
         retry:
